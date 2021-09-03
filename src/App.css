@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+body{
+  color: #333; 
+  font-family: 'Lato';
+  /* cursor: pointer !important */
+  /* overflow-y: hidden; */
+}
+/* Full Body */
+.App{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 7fr;
+}
+/* Heading */
+.Heading{
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 20px;
+  border-bottom: 1px solid #ddd;
+  align-self: center;
+  background-color: #00b8d4;
+  color: white;
+}
+/* Body */
+.Body{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  max-height: 100%;
+}
+
+/* L-section */
+.L-section{
+  border-right: 1px solid #ddd;
+align-self: stretch;
+max-height: 100%;
+}
+.Main-L{
+  padding: 10px 20px;
+  max-width: 100%;
+}
+.DropDown{
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ddd;
+}
+.option{
+  padding: 100px 0px;
+  height: 20px;
+}
+.ImageList{
+  max-width: 100%;
+  height: 300px;
+  border: 1px solid #ddd;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+}
+
+.Image{
+  padding: 10px 0px 10px 10px;
+  max-width:100%;
+  border-bottom: 1px solid #eee;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+/* R-section */
+.R-section{
+  display: grid;
+  grid-template-rows: 5fr 2fr;
+  max-height: 100%;
+
+}
+/* Main Screen With navigation button */
+.Main-R{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: stretch;
+  height: 100%;
+  
+}
+/* Navigation button and screen */
+
+/* Main Screen */
+.MainScreen{
+  margin: 50px 20px 30px;
+}
+.MainScreen > img{
+  object-fit: cover;
+  height: 400px;
+  width: 500px;
+
+}
+.left-arrow, .right-arrow{
+  align-self: center;
+  justify-self: center;
+  padding: 20px;
+}
+
+/* List of ThumbNail */
+.List-ThumbNail{
+  
+  display: flex;
+  overflow-x: scroll;
+}
+/* Thumbnail */
+.ImageIcon{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  width: 120px;
+  padding: 10px;
+  /* cursor: grab !important */
+}
+.Icon{
+  
+  width: 80px;
+  height: 80px;
+  justify-self: center;
+  align-self: center;
+}
+.IconTitle{
+  text-align: center;
+}
+.done{
+  opacity: 0.5;
+  /* cursor: url('https://www.google.com/intl/en_ALL/mapfiles/closedhand.cur'), all-scroll !important; */
+
+  cursor: move 
+}
+
+.dnd{
+  opacity: 0.5;
+  cursor: move
+}
+
