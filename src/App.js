@@ -13,15 +13,15 @@ function App() {
   // for change on click of thumbnail
   const [status,setStatus] = useState(0)
   // set query data 
-  const [query,setQuery] =useState('technology')
-
+  const [query,setQuery] =useState('wait')
   // make fetch request everytime query is updated
   useEffect(()=>{
     fetch(`http://localhost:5000/${query}`)
     .then(res=>res.json())
     .then(datas=>{
-     setData(datas.slice(0,8))
-      setPrimeData([...datas])
+        setData(datas.slice(0,8))
+         setPrimeData([...datas])
+      
     })
   },[query])
   
@@ -76,8 +76,8 @@ const onTileDragEnd =(e)=>{
  
 }
 // onChange in query 
-const onChange = (i)=>{
-  setQuery(i)
+const onChange = (q)=>{
+  setQuery(q)
 }
 
 // on Drag over
